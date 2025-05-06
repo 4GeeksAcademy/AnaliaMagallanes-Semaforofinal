@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom/client";
-import "./styles.css"; // Asegúrate de incluir este archivo para los estilos
+
+import "../../styles/styles.css"; 
 
 function TrafficLight() {
   const [color, setColor] = useState("red");
@@ -23,5 +23,4 @@ function TrafficLight() {
   );
 }
 
-const root = ReactDOM.createRoot(document.querySelector("#root"));
-root.render(<TrafficLight />);
+export default TrafficLight;
